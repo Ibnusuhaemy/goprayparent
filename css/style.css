@@ -1,0 +1,254 @@
+/* --- General Styles --- */
+
+/* Avenir Medium Fonts */
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('../fonts/avenirmedium.eot');
+  src: url('../fonts/avenirmedium.eot?#iefix') format('woff2'),
+  	   url('../fonts/avenirmedium.woff') format('woff'), 
+  	   url('../fonts/avenirmedium.ttf') format('truetype'), 
+  	   url('../fonts/avenirmedium.svg#avenirmedium') format('svg');
+}
+
+/* Avenir Heavy Fonts */
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('../fonts/avenirheavy.eot');
+  src: url('../fonts/avenirheavy.eot?#iefix') format('woff2'),
+  	   url('../fonts/avenirheavy.woff') format('woff'), 
+  	   url('../fonts/avenirheavy.ttf') format('truetype'), 
+  	   url('../fonts/avenirheavy.svg#avenirmedium') format('svg');
+}
+
+/* Avenir Roman Fonts */
+@font-face {
+  font-family: 'Avenir Roman';
+  src: url('../fonts/avenirroman.eot');
+  src: url('../fonts/avenirroman.eot?#iefix') format('woff2'),
+  	   url('../fonts/avenirroman.woff') format('woff'), 
+  	   url('../fonts/avenirroman.ttf') format('truetype'), 
+  	   url('../fonts/avenirroman.svg#avenirmedium') format('svg');
+}
+
+/* Font Smoothing */
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    font-smoothing: antialiased !important;
+}
+
+/* List */
+ul{
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0px;
+    -ms-padding-start: 0px;
+    -o-padding-start: 0px;
+    list-style: none;
+    text-align: left;
+}
+
+/* Buttons */
+.btn{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn-green{
+    background: #20C27B;
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #03ba6a;
+}
+.btn-green:focus,
+.btn-green:hover{
+    color: #fff;
+    outline: none;
+}
+.btn-green:focus,
+.btn-green:active:focus,
+.btn-green.active:focus,
+.btn-green.focus,
+.btn-green:active.focus, .btn-green.active.focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+/* --- Navigation Bar --- */
+/* - Front Page Header - */
+.header-front .navbar-front{
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.header-front .navbar-brand{
+    height: auto;
+    margin-left: 0;
+}
+.navbar-front .navbar-collapse{
+    position: relative;
+}
+.navbar-front .navbar-nav > li{
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 60px;
+}
+.navbar-front .navbar-nav > li > a{
+    color: #20c17b;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 26.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+}
+.navbar-front .navbar-nav > li > a:hover,
+.navbar-front .navbar-nav > li > a:focus{
+    color: #20c17b;
+}
+
+/* --- Sign In --- */
+.content-front{
+    padding-top: 50px;
+}
+.content-front .form-sign-up{
+    padding-right: 60px;
+}
+.content-front .form-sign-in{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.content-front .front-tabs{
+    border-bottom: 1px solid #E0E1ED;
+}
+.front-tabs li{
+    padding: 0 40px;
+}
+.front-tabs li:first-child{
+    padding-left: 0;
+}
+.front-tabs li a{
+    font-family: "Avenir Heavy", Fallback, sans-serif;
+    font-size: 24.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #23B968;
+    border-radius: 0;
+    padding: 0;
+}
+.front-tabs > li > a:hover,
+.front-tabs > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+}
+.front-tabs > li.active{
+    padding-left: 0;
+    padding-right: 0;
+}
+.front-tabs > li.active > a,
+.front-tabs > li.active > a:hover,
+.front-tabs > li.active > a:focus{
+    margin-bottom: -1px;
+    border-bottom: 2px solid #20C27B;
+    color: #23B968;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+.content-front .front-form{
+    margin-top: 30px;
+}
+.front-form .form-group{
+    margin-bottom: 20px;
+}
+.front-form label{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 18.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+}
+.front-form .form-control{
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 50px;
+}
+.front-form .form-btn{
+    text-align: right;
+}
+.front-form .form-link{
+    color: #20c17b;
+    font-family: "Avenir Heavy", Fallback, sans-serif;
+    font-size: 18.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+/* --- Media Queries --- */
+@-ms-viewport{
+    width: device-width;
+}
+@media screen and (max-width: 991px){
+    /* --- Sign In --- */
+    .content-front .form-sign-up{
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .content-front .form-sign-in{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /* --- Front Navigation Menu --- */
+    .navbar-front .navbar-nav > li{
+        position: relative;
+        right: auto;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        margin: 0;
+        height: auto;
+        text-align: right;
+    }
+    .navbar-front .navbar-header{
+        position: relative;
+    }
+    .header-front .navbar-brand{
+        padding-left: 0;
+    }
+    .navbar-front .navbar-toggle{
+        margin: 0;
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 34px;
+    }
+    
+    /* --- Sign In --- */
+    .front-tabs li{
+        padding: 0 20px;
+    }
+}
