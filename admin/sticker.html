@@ -41,8 +41,7 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="active" role="presentation"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
-                        <li role="presentation"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a></li>
+                        <li class="active" role="presentation"><a href="#sticker" aria-controls="sticker" role="tab" data-toggle="tab">Sticker</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="navbar-notif">
@@ -173,9 +172,9 @@
                 </div>
                 <div class="list-menu">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="timeline.html"><span class="fa fa-circle"></span> Timeline</a></li>
+                        <li><a href="timeline.html"><span class="fa fa-circle"></span> Timeline</a></li>
                         <li><a href="#"><span class="fa fa-circle"></span> Pray Circle</a></li>
-                        <li><a href="sticker.html"><span class="fa fa-circle"></span> Sticker</a></li>
+                        <li class="active"><a href="sticker.html"><span class="fa fa-circle"></span> Sticker</a></li>
                         <li><a href="donate.html"><span class="fa fa-circle"></span> Donate</a></li>
                         <li><a href="#"><span class="fa fa-circle"></span> Collection</a></li>
                         <li class="admin-logout"><a href="#"><span class="fa fa-circle"></span> Logout</a></li>
@@ -184,151 +183,69 @@
             </div>
             
             <div class="tab-content">
-                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="sticker">
                     <div class="row">
-                        <div class="col-sm-8 col-md-9 detail-content">
-                            
-                            <div class="panel panel-default panel-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/user-2.png" width="40" height="41" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Veti Vera melakukan ibadah Solat Subuh dengan Putri Fernanda di Masjid Al Amin</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
+                        <div class="col-xs-12 detail-content">
+                            <div class="panel panel-default panel-timeline panel-sticker">
+                                <div class="form-group form-filter">
+                                    <select class="form-control">
+                                        <option value="0">All</option>
+                                    </select>
+                                    <span class="fa fa-angle-down"></span>
                                 </div>
-                                <p class="timeline-detail">
-                                    The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly 
-                                    charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour 
-                                    amplifying condiments. Why are you still reading this- go get a cheeseburger.
-                                </p>
+                                <ul class="sticker-list">
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Solat wajib</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Solat Sunnah Rawatib</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Sedekah</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Puasa Wajib</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Juzamma</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Membantu Orang Tua</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Iqra</p>
+                                    </li>
+                                    <li class="sticker-item">
+                                        <div class="img-sticker">
+                                            <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
+                                        </div>
+                                        <p class="sticker-name">Baca Buku Nabi</p>
+                                    </li>
+                                </ul>
                             </div>
                             
-                            <div class="panel panel-default panel-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/user-2.png" width="40" height="41" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Veti Vera melakukan ibadah Baca Al-Quran dengan Putri Fernanda di Masjid Al Amin</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
-                                </div>
-                                <p class="timeline-detail">
-                                    The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly 
-                                    charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour 
-                                    amplifying condiments. Why are you still reading this- go get a cheeseburger.
-                                </p>
-                            </div>
                             
-                            <div class="panel panel-default panel-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/user-3.png" width="40" height="41" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Putri Feranda</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="owl-carousel owl-theme sticker-list">
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                    <div class="item">
-                                        <img src="../images/photos/no-sticker.png" width="88" height="88" alt="Sticker" class="img-responsive">
-                                    </div>
-                                </div>
-                                
-                                <p class="timeline-detail">
-                                    The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly 
-                                    charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour 
-                                    amplifying condiments. Why are you still reading this- go get a cheeseburger.
-                                </p>
-                            </div>
-                            
-                            <div class="panel panel-default panel-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/user-3.png" width="40" height="41" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Putri Feranda melakukan ibadah Baca Al-Quran dengan Putri Fernanda di Masjid Al Amin</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
-                                </div>
-                                <p class="timeline-detail">
-                                    The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly 
-                                    charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour 
-                                    amplifying condiments. Why are you still reading this- go get a cheeseburger.
-                                </p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="col-sm-4 col-md-3 detail-rightmenu">
-                            <p class="title">Keluarga</p>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/bitmap.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Allie Carson</h4>
-                                    <p class="status">Bunda</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/user-4.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Kenneth Santiago</h4>
-                                    <p class="status">Bapak</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/user-5.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Chester Schultz</h4>
-                                    <p class="status">Om</p>
-                                </div>
-                            </div>
                             
                         </div>
                         
