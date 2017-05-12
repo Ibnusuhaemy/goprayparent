@@ -81,6 +81,15 @@ ul{
     outline: none;
     outline-offset: 0;
 }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    outline-offset: 0;
+}
 
 /* - Form Control - */
 .form-control{
@@ -768,6 +777,153 @@ ul{
 }
 
 
+/* --- Trophy --- */
+.trophy-content .user-menu{
+    text-align: right;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.user-menu .btn{
+    color: #464646;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 15.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: left;
+    border-radius: 50px;
+    height: 36px;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    float: none;
+}
+.user-menu.open > .dropdown-toggle.btn-default,
+.user-menu .btn-default{
+    border-color: #20C27B;
+}
+.user-menu.open > .dropdown-toggle.btn-default:focus,
+.user-menu.open > .dropdown-toggle.btn-default:hover,
+.user-menu .btn-default:focus,
+.user-menu .btn-default:hover{
+    background: #fff;
+}
+.user-menu .fa-user{
+    padding-right: 10px;
+}
+.user-menu .fa-angle-down{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    height: 15px;
+}
+.user-menu .dropdown-menu{
+    left: auto;
+    right: 10px;
+}
+.panel-collection{
+    padding: 30px 40px;
+}
+.panel-collection .collection-trophy{
+    text-align: right;
+}
+.collection-trophy .btn-info-trophy{
+    padding: 0;
+    color: #23b968;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 16.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+}
+.panel-collection .btn-info-trophy:active,
+.panel-collection .btn-info-trophy.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.panel-collection .collection-overview{
+    text-align: center;
+}
+.panel-collection .collection-congrat{
+    width: 441px;
+    color: #464646;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 36.0px;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.collection-overview .icon-trophy{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.collection-overview .collection-poin{
+    color: #464646;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 24.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.collection-overview .table-title{
+    color: #464646;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 18.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.panel-collection > .table-collection{
+    margin-bottom: 20px;
+}
+.table-collection .table > thead > tr > th{
+    border-bottom: none;
+    text-transform: uppercase;
+}
+.table-collection .table-striped > tbody > tr:nth-of-type(odd){
+    background: #fff;
+}
+.table-collection .table-striped > tbody > tr:nth-of-type(even){
+    background: #eff7f3;
+}
+.table-collection .table > tbody > tr > td{
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+.table-collection .trophy-icon{
+    text-align: center;
+}
+.table-collection .table > tbody > tr > td.trophy-icon{
+    padding-top: 18px;
+    padding-bottom: 8px;
+}
+.table-collection .table-trophy{
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+}
+.table-collection .table-trophy.gold-trophy{
+    background: url(../images/icons/trophy.png);
+    background-size: 31px 31px;
+    background-position: center center;
+}
+.table-collection .table-trophy.silver-trophy{
+    background: url(../images/icons/trophy-disabled.png);
+    background-size: 31px 31px;
+    background-position: center center;
+}
+
+
 /* --- Media Queries --- */
 @-ms-viewport{
     width: device-width;
@@ -1092,6 +1248,11 @@ ul{
         border-left: 1px solid #e0e1eD;
     }
     
+    /* --- Collection --- */
+    .panel-collection .collection-congrat{
+        width: 100%;
+        margin-top: 20px;
+    }
     
 }
 
