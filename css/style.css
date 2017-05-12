@@ -207,6 +207,7 @@ ul{
     -webkit-box-shadow: none;
     box-shadow: none;
     height: 50px;
+    width: 100%;
 }
 .front-form .form-btn{
     text-align: right;
