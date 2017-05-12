@@ -4,30 +4,33 @@
 @font-face {
   font-family: 'Avenir Medium';
   src: url('../fonts/avenirmedium.eot');
-  src: url('../fonts/avenirmedium.eot?#iefix') format('woff2'),
-  	   url('../fonts/avenirmedium.woff') format('woff'), 
-  	   url('../fonts/avenirmedium.ttf') format('truetype'), 
-  	   url('../fonts/avenirmedium.svg#avenirmedium') format('svg');
+  src: url('../fonts/avenirmedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenirmedium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/avenirmedium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/avenirmedium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenirmedium.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /* Avenir Heavy Fonts */
 @font-face {
   font-family: 'Avenir Heavy';
   src: url('../fonts/avenirheavy.eot');
-  src: url('../fonts/avenirheavy.eot?#iefix') format('woff2'),
-  	   url('../fonts/avenirheavy.woff') format('woff'), 
-  	   url('../fonts/avenirheavy.ttf') format('truetype'), 
-  	   url('../fonts/avenirheavy.svg#avenirmedium') format('svg');
+  src: url('../fonts/avenirheavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenirheavy.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/avenirheavy.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/avenirheavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenirheavy.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /* Avenir Roman Fonts */
 @font-face {
   font-family: 'Avenir Roman';
   src: url('../fonts/avenirroman.eot');
-  src: url('../fonts/avenirroman.eot?#iefix') format('woff2'),
-  	   url('../fonts/avenirroman.woff') format('woff'), 
-  	   url('../fonts/avenirroman.ttf') format('truetype'), 
-  	   url('../fonts/avenirroman.svg#avenirmedium') format('svg');
+  src: url('../fonts/avenirroman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenirroman.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/avenirroman.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/avenirroman.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenirroman.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /* Font Smoothing */
