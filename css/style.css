@@ -51,11 +51,22 @@ ul{
     text-align: left;
 }
 
-/* Buttons */
+/* General Buttons */
 .btn{
     padding-left: 20px;
     padding-right: 20px;
 }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+/* Button Green */
 .btn-green{
     background: #20C27B;
     border-radius: 25px;
@@ -81,12 +92,30 @@ ul{
     outline: none;
     outline-offset: 0;
 }
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
+
+/* White Button */
+.btn-white{
+    background: #fff;
+    border-radius: 25px;
+    color: #23B968;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #20c27b;
+}
+.btn-white:focus,
+.btn-white:hover{
+    color: #23B968;
+    outline: none;
+}
+.btn-white:focus,
+.btn-white:active:focus,
+.btn-white.active:focus,
+.btn-white.focus,
+.btn-white:active.focus, .btn-white.active.focus {
     outline: none;
     outline-offset: 0;
 }
@@ -317,6 +346,19 @@ ul{
 .navbar-admin .navbar-right > li.navbar-notif > a{
     font-size: 25px;
     font-weight: 600;
+}
+.navbar-admin .navbar-right > li.navbar-notif > a span{
+    position: relative;
+}
+.navbar-admin .navbar-right > li.navbar-notif > a span i{
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    color: #F90060;
+}
+.navbar-admin .navbar-right > li.navbar-notif.open > a span i{
+    opacity: 0;
 }
 .navbar-notif .dropdown-notif{
     min-width: 400px;
@@ -658,6 +700,15 @@ ul{
     font-weight: 500;
     text-align: left;
 }
+.detail-rightmenu .right-btn{
+    text-align: right;
+    margin-top: 30px;
+}
+.detail-rightmenu .btn{
+    font-family: "Avenir Heavy", Fallback, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
 
 
 /* --- Sticker --- */
@@ -697,14 +748,6 @@ ul{
     padding-right: 0;
     text-align: left;
 }
-/*
-.panel-sticker .sticker-list:after,
-.panel-sticker .sticker-list:before{
-    display: block;
-    clear: both;
-    content: "";
-}
-*/
 .panel-sticker .sticker-item{
     width: 150px;
     display: inline-block;
@@ -907,20 +950,155 @@ ul{
     padding-top: 18px;
     padding-bottom: 8px;
 }
-.table-collection .table-trophy{
+.table-trophy{
     width: 31px;
     height: 31px;
     display: inline-block;
 }
-.table-collection .table-trophy.gold-trophy{
+.table-trophy.gold-trophy{
     background: url(../images/icons/trophy.png);
     background-size: 31px 31px;
     background-position: center center;
 }
-.table-collection .table-trophy.silver-trophy{
+.table-trophy.silver-trophy{
     background: url(../images/icons/trophy-disabled.png);
     background-size: 31px 31px;
     background-position: center center;
+}
+.table-trophy.bronze-trophy{
+    background: url(../images/icons/trophy-bronze.png);
+    background-size: 31px 31px;
+    background-position: center center;
+}
+.table-trophy.platinum-trophy{
+    background: url(../images/icons/trophy-platinum.png);
+    background-size: 31px 31px;
+    background-position: center center;
+}
+
+/* - Collection Modal - */
+.modal-open .modal.modal-white{
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+.modal-white .modal-content{
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+}
+.infotrophy-content .modal-header{
+    text-align: left;
+}
+.infotrophy-content .modal-title{
+    color: #20c17b;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 20.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: left;
+}
+.infotrophy-content .modal-body{
+    padding: 15px 40px 60px;
+}
+.infotrophy-content .infotrophy-list{
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e1ed;
+}
+.infotrophy-content .infotrophy-list .table-trophy{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.infotrophy-content .infotrophy-list p{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 16.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+.infotrophy-content .infotrophy-list .pull-right{
+    padding-top: 2px;
+}
+
+
+/* --- Pray Circle --- */
+.panel-circle{
+    padding: 20px 0 0;
+}
+.panel-circle .circle-form .media{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.circle-form .media .media-left{
+    padding-top: 10px;
+}
+.circle-form .circle-body{
+    padding-left: 10px;
+}
+.circle-body .form-control{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 16.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+}
+.circle-body .circle-for{
+    border-bottom: 1px solid #e0e1ed;
+}
+.circle-for .pointer{
+    opacity: 0.57;
+}
+.circle-for .form-control{
+    width: 80%;
+    display: inline-block;
+    border: none;
+    padding-top: 0;
+}
+.circle-message .form-control{
+    width: 100%;
+    height: 100px;
+    border: none;
+    padding: 0;
+}
+.circle-message .form-control::-moz-placeholder{
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    opacity: 0.5;
+    color: #363636;
+}
+.circle-message .form-control:-moz-placeholder{
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    opacity: 0.5;
+    color: #363636;
+}
+.circle-message .form-control:-ms-input-placeholder{
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    opacity: 0.5;
+    color: #363636;
+}
+.circle-message .form-control:focus:-ms-input-placeholder{
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    opacity: 0.5;
+    color: #363636;
+}
+.circle-message .form-control::-webkit-input-placeholder{
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    opacity: 0.5;
+    color: #363636;
+}
+.circle-form .circle-button{
+    border-top: 1px solid #e0e1ed;
+    padding: 10px 20px;
+}
+.circle-timeline .media-timeline{
+    margin-bottom: 10px;
+}
+.circle-timeline .media-timeline .media-heading{
+    min-height: inherit;
 }
 
 
@@ -1328,8 +1506,41 @@ ul{
     .panel-sticker .sticker-list{
         text-align: center;
     }
+    
+    /* --- Pray Circle --- */
+    .circle-form .circle-body{
+        padding-left: 0;
+    }
+    .circle-button .btn{
+        display: block;
+        margin-bottom: 10px;
+    }    
+    .circle-button input[type=submit]{
+        float: none !important;
+    }
+    
 }
 
 @media screen and (max-width: 399px){
-    
+    .panel-collection{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .panel-collection .collection-congrat{
+        font-size: 30px;
+    }
+    .infotrophy-content .infotrophy-list,
+    .infotrophy-content .modal-footer{
+        text-align: center;
+    }
+    .infotrophy-content .infotrophy-list .table-trophy{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .infotrophy-content .infotrophy-list p{
+        display: block;
+    }
+    .infotrophy-content .infotrophy-list .pull-right{
+        float: none !important;
+    }
 }
