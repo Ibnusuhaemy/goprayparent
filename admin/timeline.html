@@ -41,8 +41,8 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="active" role="presentation"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
-                        <li role="presentation"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a></li>
+                        <li role="presentation"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
+                        <li class="active" role="presentation"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Summary</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="navbar-notif">
@@ -184,7 +184,7 @@
             </div>
             
             <div class="tab-content">
-                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                <section class="admin-content tab-pane fade" role="tabpanel" id="timeline">
                     <div class="row">
                         <div class="col-sm-4 col-md-3 detail-rightmenu visible-xs">
                             <p class="title">Keluarga</p>
@@ -384,10 +384,95 @@
                     </div>
                 </section>
 
-                <section class="admin-content tab-pane fade" role="tabpanel" id="summary">
-                    <div class="container">
-                        <div class="row">
-                            <p>a</p>
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="summary">
+                    <div class="row">
+                        <div class="col-xs-12 detail-content summary-content">
+                           
+                            <!-- User Dropdown -->
+                            <div class="summary-btn">
+                                <div class="btn-group user-menu">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-user"></i> Putri Feranda <span class="fa fa-angle-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-green btn-download"><span class="glyphicon glyphicon-save"></span> Download</a>
+                            </div>
+                            
+                            <div class="row summary-list">
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="panel panel-default">
+                                        <p class="summary-pray">Mengaji</p>
+                                        <div class="summary-point">
+                                            <h1>1530</h1>
+                                            <p>Point</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="panel panel-default">
+                                        <p class="summary-pray">Sholat Sunnah</p>
+                                        <div class="summary-point">
+                                            <h1>230</h1>
+                                            <p>Point</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="panel panel-default">
+                                        <p class="summary-pray">Puasa Sunnah</p>
+                                        <div class="summary-point">
+                                            <h1>1530</h1>
+                                            <p>Point</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="panel panel-default">
+                                        <p class="summary-pray">Sedekah</p>
+                                        <div class="summary-point">
+                                            <h1>230</h1>
+                                            <p>Point</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row summary-graph">
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="panel panel-default">
+                                        <p class="summary-pray">Sholat</p>
+                                        <div id="chartSholat" class="graph-content" style="height: 325px; width: 100%;"></div>
+                                        <div class="graph-legend">
+                                            <ul class="list-inline">
+                                                <li><span class="graph-indicator graph-1"></span> 120 Sholat di masjid</li>
+                                                <li><span class="graph-indicator graph-2"></span> 15 Sholat terlambat</li>
+                                                <li><span class="graph-indicator graph-3"></span> 15 Sholat di rumah</li>
+                                                <li><span class="graph-indicator graph-4"></span> 30 Tidak Sholat</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <div class="panel panel-default">
+                                        <p class="summary-pray">Puasa Ramadhan</p>
+                                        <div id="chartPuasa" class="graph-content" style="height: 325px; width: 100%;"></div>
+                                        <div class="graph-legend">
+                                            <ul>
+                                                <li><span class="graph-indicator graph-1"></span> 23 Puasa</li>
+                                                <li><span class="graph-indicator graph-4"></span> 7 Tidak Puasa</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -401,33 +486,6 @@
         <!-- Javascript -->
         <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../assets/owlcarousel.2.2.0/owl.carousel.min.js"></script>
-        <script type="text/javascript">
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                dots: false,
-                margin: 20,
-                autoHeight: true,
-                autoHeightClass: 'owl-height',
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    400:{
-                        items:2
-                    },
-                    600:{
-                        items:3
-                    },
-                    1200:{
-                        items:6
-                    }
-                }
-            });
-        </script>
         
         <!-- Dial Panel Toggle Button -->
         <script type="text/javascript">
@@ -457,6 +515,65 @@
                 }
             });
         </script>
+        
+        <!-- Pie Chart -->
+        <script type="text/javascript">
+            window.onload = function () {
+                CanvasJS.addColorSet("sholatWajib",
+                [//colorSet Array
+
+                "#687BF4",
+                "#FDD761",
+                "#2FDF93",
+                "#FB5495"               
+                ]);
+                
+                CanvasJS.addColorSet("puasaRamadhan",
+                [//colorSet Array
+
+                "#687BF4",
+                "#FB5495"               
+                ]);
+                
+                var chart = new CanvasJS.Chart("chartSholat",
+                {
+                    colorSet: "sholatWajib",
+                    data: [
+                    {       
+                        type: "pie",
+                        toolTipContent: "#percent %",
+                        dataPoints: [
+                            { y: 120 },
+                            { y: 15 },
+                            { y: 15 },
+                            { y: 30 }
+                        ]
+                    }
+                    ]
+                });
+                
+                var chart2 = new CanvasJS.Chart("chartPuasa",
+                {
+                    colorSet: "puasaRamadhan",		
+                    data: [
+                    {       
+                        type: "pie",
+                        showInLegend: true,
+                        toolTipContent: "#percent %",
+                        legendText: "{indexLabel}",
+                        dataPoints: [
+                            {  y: 23 },
+                            {  y: 7 }
+                        ]
+                    }
+                    ]
+                });
+                
+                chart.render();
+                chart2.render();
+            }
+        </script>
+        <script type="text/javascript" src="../assets/canvas/canvasjs.min.js"></script>
         
     </body>
 </html>
