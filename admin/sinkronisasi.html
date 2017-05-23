@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Go Pray for Admin</title>
+        
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/icons/logo-go-pray.ico">
+        <link rel="icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        <link rel="apple-touch-icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="assets/font-awesome.4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+</head>
+<body>
+
+</body>
+
+ <div class="admin-container animated right">
+            
+            <header class="admin-header">
+                <nav class="navbar navbar-default navbar-admin">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+        
+            </header>
+            
+            <div class="admin-leftmenu left">
+                <div class="user-profile">
+                    <div class="user-image">
+                        <img src="images/photos/bitmap.png" width="149" height="149" alt="Go Pray Admin Profile" class="img-circle">
+                        <a href="#" class="edit-profile"></a>
+                    </div>
+                    <p class="name">ADMIN</p>
+                    <!-- <p class="status">Bunda</p> -->
+                </div>
+                <div class="list-menu">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li  class="active"><a href="sinkronisasi.html"><span class="fa fa-refresh"></span> Sinkron Jadwal</a></li>
+                        <li><a href="nilai_ibadah.html"><span class="fa fa-thumbs-up"></span> Nilai Ibadah</a></li>
+                        <li><a href="sticker_store.html"><span class="fa fa-sticky-note"></span> Sticker store</a></li>
+                        <li><a href="verifikasi_payment.html"><span class="fa fa-credit-card"></span> Verifikasi Payment</a></li>
+                        <li><a href="manajemen.html"><span class="fa fa-user-circle"></span> Manage User</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                    <div class="row">
+                    <div class="col-sm-8 col-md-12 detail-content">
+						<input type="submit" name="login-user" class="btn btn-green" value="Sinkronisasi"/>
+						<p></p>
+						<hr>
+                    	<div class="panel panel-default panel-timeline">
+							</br>
+							
+                            <table id="example" class="display" cellspacing="0" width="100%">
+
+						        <thead>
+						            <tr>
+						                <th>#</th>
+						                <th>Tanggal</th>
+						                <th>Hari</th>
+						                <th>Fajr</th>
+						                <th>Subuh</th>
+						                <th>Zuhr</th>
+										<th>Asr</th>
+										<th>Maghrib</th>
+										<th>Isya</th>
+						            </tr>
+						        </thead>
+						        
+						        <tbody>
+						            <tr>
+						                <td>1</td>
+						                <td>23/05/2017</td>
+						                <td>Selasa</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>2</td>
+						                <td>24/05/2017</td>
+						                <td>Rabu</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>3</td>
+						                <td>25/05/2017</td>
+						                <td>Kamis</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>4</td>
+						                <td>26/05/2017</td>
+						                <td>Jumat</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>5</td>
+						                <td>27/05/2017</td>
+						                <td>Sabtu</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>6</td>
+						                <td>28/05/2017</td>
+						                <td>Minggu</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>7</td>
+						                <td>29/05/2017</td>
+						                <td>Senin</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+										 <td>11.30-13.45</td>
+						                <td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>8</td>
+						                <td>30/05/2017</td>
+						                <td>Selasa</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>9</td>
+						                <td>31/05/2017</td>
+						                <td>Rabu</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>10</td>
+						                <td>01/06/2017</td>
+						                <td>Kamis</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+									<tr>
+						                <td>11</td>
+						                <td>02/06/2017</td>
+						                <td>Jumat</td>
+						                <td>03.00-03.50</td>
+						                <td>04.00-05.30</td>
+						                <td>11.30-13.45</td>
+										<td>14.50-15.10</td>
+										<td>17.35-18.10</td>
+										<td>18.59-24.00</td>
+						            </tr>
+						            
+						        </tbody>
+						    </table>    
+                        </div>
+						
+                        <!-- <div class="col-sm-8 col-md-12 detail-content">
+                            
+                            
+                        </div> -->
+                    </div>
+					
+                </section>
+
+                <section class="admin-content tab-pane fade" role="tabpanel" id="summary">
+                    <div class="container">
+                        <div class="row">
+                            <p>a</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="assets/owlcarousel.2.2.0/owl.carousel.min.js"></script>
+        <script type="text/javascript">
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                dots: false,
+                margin: 20,
+                autoHeight: true,
+                autoHeightClass: 'owl-height',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    400:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1200:{
+                        items:6
+                    }
+                }
+            });
+        </script>
+        
+        <!-- Dial Panel Toggle Button -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var action = 1;
+
+                $("[data-toggle=offcanvas]").on("click", viewSomething);
+
+                function viewSomething() {
+                    if ( action == 1 ) {
+                        $('.right').addClass('active');
+                        $('.left').addClass('active');
+
+                        $('.animated').addClass('slideInLeft');
+                        $('.animated').removeClass('slideInRight');
+
+                        action = 2;
+                    } else {
+                        $('.animated').removeClass('slideInLeft');
+                        $('.animated').addClass('slideInRight');
+
+                        $('.right').removeClass('active');
+                        $('.left').removeClass('active');
+
+                        action = 1;
+                    }
+                }
+            });
+            $(document).ready(function() {
+			    $('#example').DataTable();
+			} );
+        </script>
+</html>

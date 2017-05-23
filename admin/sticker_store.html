@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Go Pray for Admin</title>
+        
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/icons/logo-go-pray.ico">
+        <link rel="icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        <link rel="apple-touch-icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/font-awesome.4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+ 	.ojo-mepet{
+ 		margin: 0 7px 0 7px;
+ 	}
+ 	.btn-20{
+ 		margin-bottom: 20px;
+ 	}
+ 	.flex{
+ 		width: 100%;
+ 	}
+
+</style>
+
+
+
+</head>
+<body>
+
+</body>
+	<div class="collection-trophy">
+        <div class="modal fade modal-white" id="TambahSticker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content infotrophy-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" >Tambah Stiker</h4>
+                    </div>
+                   	<div class="modal-body">
+						<form class="form-horizontal ">
+						  <div class="form-group ">
+						    <label for="inputEmail3" class="col-sm-3 control-label">Nama Sticker</label>
+						    <div class="col-sm-9">
+						      <input type="email"  class="form-control flex" id="inputEmail3">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-3 control-label">Cover</label>
+						    <div class="col-sm-9">
+						      <input type="file" class="form-control flex" id="inputPassword3">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-3 control-label">Harga Sticker</label>
+						    <div class="col-sm-9">
+						      <input type="password" class="form-control flex" id="inputPassword3">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-3 control-label">Sticker Set</label>
+						    <div class="col-sm-9">
+						      <input type="password" class="form-control flex" id="inputPassword3">
+						    </div>
+						  </div>
+						</form>                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-green" data-dismiss="modal">Simpan</button>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="collection-trophy">
+        <div class="modal fade modal-white" id="TambahPacket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content infotrophy-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Tambah Stiker</h4>
+                    </div>
+                   	<div class="modal-body">
+						<h4 class="modal-title" >KAMINGSUN</h4>          
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-green" data-dismiss="modal">Simpan</button>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal fade" id="DetailSticker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content infotrophy-content">
+                    <div class="modal-header">
+                    	<div class="row">
+                    		<div class="col-sm-4">
+                        		<h4 class="modal-title">Detail Stiker</h4>
+                    		</div>
+                    		<div class="col-sm-8">
+                        		<h4 class="modal-title">: This</h4>
+                    		</div>
+                    		<div class="col-sm-4">
+                        		<h4 class="modal-title">ID Stiker</h4>
+                    		</div>
+                    		<div class="col-sm-8">
+                        		<h4 class="modal-title">: DD000000e</h4>
+                    		</div>
+                    	</div>
+                    </div>
+                    <div>
+      					<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+                    </div>
+      			<div class="modal-body">
+      				<div class="row">
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      				</div>
+      				<div class="row">
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      				</div>
+      				<div class="row">
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      				</div>
+      				<div class="row">
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/photos/bitmap.png">
+      					</div>
+      				</div>
+      			</div>
+      			<div class="modal-footer">
+                    <button type="button" class="btn btn-green" data-dismiss="modal">Simpan</button>
+                </div>
+    		</div>
+  		</div>
+	</div>
+	<div class="modal fade" id="DetailPacket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content infotrophy-content">
+                    <div class="modal-header">
+                        <div class="row">
+                    		<div class="col-sm-4">
+                        		<h4 class="modal-title">Detail Paket</h4>
+                    		</div>
+                    		<div class="col-sm-8">
+                        		<h4 class="modal-title">: This</h4>
+                    		</div>
+                    		<div class="col-sm-4">
+                        		<h4 class="modal-title">Harga</h4>
+                    		</div>
+                    		<div class="col-sm-8">
+                        		<h4 class="modal-title">: Rp. 30000</h4>
+                    		</div>
+                    	</div>
+                    </div>
+      			<div class="modal-body">
+      				<div class="row">
+      					<div class="col-sm-4">
+      						<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+      					</div>
+      				</div>
+      				<div class="row">
+      					<div class="col-sm-4">
+      						<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+      					</div>
+      					<div class="col-sm-4">
+      						<img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive">
+      					</div>
+      				</div>
+      				
+      			</div>
+      			<div class="modal-footer">
+                    <button type="button" class="btn btn-green" data-dismiss="modal">Simpan</button>
+                </div>
+    		</div>
+  		</div>
+	</div>
+
+	<div class="admin-container animated right">
+        <header class="admin-header">
+            <nav class="navbar navbar-default navbar-admin conteiner">
+                <div class="container">  
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                </div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active" role="presentation"><a role="tab" data-toggle="tab">STICKER</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="admin-leftmenu left">
+            <div class="user-profile">
+                <div class="user-image">
+                    <img src="images/photos/bitmap.png" width="149" height="149" alt="Go Pray Admin Profile" class="img-circle">
+                    <a href="#" class="edit-profile"></a>
+                </div>
+                <p class="name">ADMIN</p>
+            </div>
+            <div class="list-menu">
+                <ul class="nav nav-pills nav-stacked">
+                    <li ><a href="sinkronisasi.html"><span class="fa fa-refresh"></span> Sinkron Jadwal</a></li>
+                    <li ><a href="nilai_ibadah.html"><span class="fa fa-thumbs-up"></span> Nilai Ibadah</a></li>
+                    <li class="active"><a href="sticker_store.html"><span class="fa fa-sticky-note"></span> Sticker store</a></li>
+                    <li><a href="verifikasi_payment.html"><span class="fa fa-credit-card"></span> Verifikasi Payment</a></li>
+                    <li><a href="manajemen.html"><span class="fa fa-user-circle"></span> Manage User</a></li>
+                </ul>
+            </div>
+        </div>
+            
+            <div class="tab-content">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                    <div class="row">
+                    <div class="col-sm-12 detail-content">
+                    	<div class="panel panel-default panel-timeline table-responsive">
+            				<div>
+            					<h3 class="text-center">STICKER STORE</h3>
+                    			<button class="btn btn-default btn-green btn-20" type="submit" data-toggle="modal" data-target="#TambahSticker"><span class="fa fa-plus-square ojo-mepet"></span>Tambah</button>
+            				</div>
+                            <div class="media media-timeline">
+		 						<table id="example" class="  display " cellspacing="0" width="100%">
+
+								        <thead>
+								            <tr>
+								                <th>#</th>
+								                <th>Nama Sticker</th>
+								                <th>harga</th>
+								                <th>Aksi</th>
+								                <th>Detail</th>
+								            </tr>
+								            <!-- <tr>
+								                <th >Edit</th>
+								                <th >Delete</th>
+								            </tr> -->
+								            
+								        </thead>
+								        <tfoot>
+								            <tr>
+								                <th>#</th>
+								                <th>Nama Sticker</th>
+								                <th>harga</th>
+								                <th>Aksi</th>
+								                <th>Detail</th>
+
+								            </tr>
+								        </tfoot>
+								        <tbody>
+								            <tr>
+								                <td>1</td>
+								                <td >this </td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>2</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>3</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>4</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>5</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>6</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>7</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>8</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>9</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>10</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>11</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>12</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>13</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>14</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>15</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>16</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>17</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>18</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>1</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 12.000</td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>2</td>
+								                <td>Cakmen ribet</td>
+								                <td>Rp. 15.000</td>
+								               	<td>
+								                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+								               
+								                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+								                </td>
+								                <td>
+								                	<a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-th-large"></span></a>
+								                </td>
+								            </tr>
+								        </tbody>
+								</table>    
+            				</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-content">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                    <div class="row">
+                    <div class="col-sm-12 detail-content">
+                    
+                    	<div class="panel panel-default panel-timeline  ">
+            				<h3 class="text-center">PACKET STICKER</h3>
+                    		<button class="btn btn-default btn-green btn-20" type="submit" style="margin-bottom: 20px;" data-toggle="modal" data-target="#TambahPacket"><span class="fa fa-plus-square ojo-mepet"></span> Buat Packet</button>
+                    		<div class="media media-timeline ">
+	 							<table id="example1" class="  display " cellspacing="0" width="100%">
+							        <thead>
+							            <tr>
+							                <th >#</th>
+							                <th >Nama Sticker</th>
+							                <th >Harga</th>
+							                <th >Aksi</th>
+							                <th>Detail</th>
+							            </tr>
+							        </thead>
+							        <tfoot>
+							            <tr>
+							                <th>#</th>
+							                <th>Nama Sticker</th>
+							                <th>Harga</th>
+							                <th>Aksi</th>
+                              <th>Detail</th>
+							            </tr>
+							        </tfoot>
+							        <tbody>
+							            <tr>
+							                <td>1</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+							                <td>
+								                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+								            </td>
+							            </tr>
+							            <tr>
+							                <td>2</td>
+							                <td>Paket Ramadhan</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+							                <td>
+								                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+								            </td>
+							            </tr>
+							            <tr>
+							                <td>3</td>
+							                <td>Cakmen ribet</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+							                <td>
+								                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+								            </td>
+							            </tr>
+							            <tr>
+							                <td>4</td>
+							                <td>Paket Komplit 1</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+							                <td>
+								                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+								              </td>
+							            </tr>
+							            <tr>
+							                <td>5</td>
+							                <td>Cakmen ribet</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+							                <td>
+								                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+								            </td>
+							            </tr>
+							            <tr>
+							                <td>6</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+							                <td>
+								                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+								            </td>
+							            </tr>
+							            <tr>
+							                <td>7</td>
+							                <td>Paket Komplit 1</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>8</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>9</td>
+							                <td>Paket Ramadhan</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>10</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>11</td>
+							                <td>Paket Komplit 1</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>12</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>13</td>
+							                <td>Paket Komplit 1</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>14</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>15</td>
+							                <td>Paket Komplit 1</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>16</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>17</td>
+							                <td>Cakmen ribet</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>18</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>19</td>
+							                <td>Cakmen ribet</td>
+							                <td>Rp. 12.000</td>
+							                <td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							            <tr>
+							                <td>20</td>
+							                <td>Paket Hemat</td>
+							                <td>Rp. 15.000</td>
+							               	<td>
+							                	<a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
+							               
+							                	<a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+							                </td>
+                              <td>
+                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPacket"><span class="glyphicon glyphicon-th-large"></span></a>
+                              </td>
+							            </tr>
+							        </tbody>
+							    </table>    
+                    			
+                    		</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="assets/owlcarousel.2.2.0/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
+        <script type="text/javascript">
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                dots: false,
+                margin: 20,
+                autoHeight: true,
+                autoHeightClass: 'owl-height',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    400:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1200:{
+                        items:6
+                    }
+                }
+            });
+        </script>
+        
+        <!-- Dial Panel Toggle Button -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var action = 1;
+
+                $("[data-toggle=offcanvas]").on("click", viewSomething);
+
+                function viewSomething() {
+                    if ( action == 1 ) {
+                        $('.right').addClass('active');
+                        $('.left').addClass('active');
+
+                        $('.animated').addClass('slideInLeft');
+                        $('.animated').removeClass('slideInRight');
+
+                        action = 2;
+                    } else {
+                        $('.animated').removeClass('slideInLeft');
+                        $('.animated').addClass('slideInRight');
+
+                        $('.right').removeClass('active');
+                        $('.left').removeClass('active');
+
+                        action = 1;
+                    }
+                }
+            });
+            $(document).ready(function() {
+			    $('#example').DataTable();
+			    $('#example1').DataTable();
+			} );
+        </script>
+</html>

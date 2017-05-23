@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <title>Manajemen User</title>
+        
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/icons/logo-go-pray.ico">
+        <link rel="icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        <link rel="apple-touch-icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="assets/font-awesome.4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+        
+    </head>
+    <body>
+        
+        <div class="admin-container animated right">
+            
+            <header class="admin-header">
+                <nav class="navbar navbar-default navbar-admin">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#manajemen" aria-controls="donate" role="tab" data-toggle="tab">Manajemen User</a></li>
+                    </ul>
+                   <!--  <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-notif">
+                            <a href="#" class="notif-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-bell-o"></span>
+                            </a>
+                            
+                            <ul class="dropdown-menu dropdown-notif">
+                                <li class="not-read">
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/trophy.png" width="31" height="31" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Selamat! Anda mendapatkan trophy baru</h4>
+                                                <p class="media-time">09.10 a.m</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/trophy.png" width="31" height="31" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Selamat! Anda mendapatkan trophy baru</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/trophy.png" width="31" height="31" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Selamat! Anda mendapatkan trophy baru</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/check.png" width="24" height="18" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Konfirmasi keluarga telah di terima</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/check.png" width="24" height="18" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Konfirmasi keluarga telah di terima</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/check.png" width="24" height="18" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Konfirmasi keluarga telah di terima</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/trophy-disabled.png" width="31" height="31" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Selamat! Anda mendapatkan trophy baru</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                               <img class="media-object" src="images/icons/trophy-disabled.png" width="31" height="31" alt="Ikon Trofi Go Pray">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Selamat! Anda mendapatkan trophy baru</h4>
+                                                <p class="media-time">1 Bulan yang lalu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                    </ul> -->
+                </nav>
+            </header>
+            
+            <div class="admin-leftmenu left">
+                <div class="user-profile">
+                    <div class="user-image">
+                        <img src="images/photos/bitmap.png" width="149" height="149" alt="Go Pray Admin Profile" class="img-circle">
+                        <a href="#" class="edit-profile"></a>
+                    </div>
+                    <p class="name">ADMIN</p>
+                    <!-- <p class="status">Bunda</p> -->
+                </div>
+                <div class="list-menu">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li ><a href="sinkronisasi.html"><span class="fa fa-refresh"></span> Sinkron Jadwal</a></li>
+                        <li ><a href="nilai_ibadah.html"><span class="fa fa-thumbs-up"></span> Nilai Ibadah</a></li>
+                        <li ><a href="sticker_store.html"><span class="fa fa-sticky-note"></span> Sticker store</a></li>
+                        <li ><a href="verifikasi_payment.html"><span class="fa fa-credit-card"></span> Verifikasi Payment</a></li>
+                        <li class="active"><a href="manajemen.html"><span class="fa fa-user-circle"></span> Manage User</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                    <div class="row">
+                    <div class="col-sm-8 col-md-12 detail-content">
+                        <div class="panel panel-default panel-timeline">
+                            <table id="example" class="display" cellspacing="0" width="100%">
+
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Foto</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>muridgo123</td>
+                                        <td>murid@gmail.com</td>
+                                        <td>********</td>
+                                        <td><img src="images/photos/user-2.png" width="50" height="50" alt="User 2" class="img-circle"></td>
+                                        <td><a href="#" class="jarak"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a href="#" class="jarak"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>    
+                        </div>
+                        <!-- <div class="col-sm-8 col-md-12 detail-content">
+                            
+                            
+                        </div> -->
+                    </div>
+                </section>
+
+                <section class="admin-content tab-pane fade" role="tabpanel" id="summary">
+                    <div class="container">
+                        <div class="row">
+                            <p>a</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+        
+        <footer></footer>
+        
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="assets/owlcarousel.2.2.0/owl.carousel.min.js"></script>
+        <script type="text/javascript">
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                dots: false,
+                margin: 20,
+                autoHeight: true,
+                autoHeightClass: 'owl-height',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    400:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1200:{
+                        items:6
+                    }
+                }
+            });
+        </script>
+        
+        <!-- Dial Panel Toggle Button -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var action = 1;
+
+                $("[data-toggle=offcanvas]").on("click", viewSomething);
+
+                function viewSomething() {
+                    if ( action == 1 ) {
+                        $('.right').addClass('active');
+                        $('.left').addClass('active');
+
+                        $('.animated').addClass('slideInLeft');
+                        $('.animated').removeClass('slideInRight');
+
+                        action = 2;
+                    } else {
+                        $('.animated').removeClass('slideInLeft');
+                        $('.animated').addClass('slideInRight');
+
+                        $('.right').removeClass('active');
+                        $('.left').removeClass('active');
+
+                        action = 1;
+                    }
+                }
+            });
+            $(document).ready(function() {
+                $('#example').DataTable();
+            } );
+        </script>
+        
+    </body>
+</html>
