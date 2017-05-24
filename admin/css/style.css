@@ -1,3 +1,17 @@
+.center-cropped {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: auto;
+  min-height: 150px; 
+  width: auto;
+}
+.center-image-manajemen{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+
 /* --- General Styles --- */
 
 /* Avenir Medium Fonts */
