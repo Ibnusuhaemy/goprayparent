@@ -40,28 +40,28 @@
         <div class="modal-body">
           <form class="form-horizontal ">
             <div class="form-group ">
-              <label for="inputEmail3" class="col-xs-12 col-sm-3 control-label">Nama Sticker</label>
+              <label  class="col-xs-12 col-sm-3 control-label">Nama Sticker</label>
               <div class="col-xs-12 col-sm-9 input-group">
-                <input type="email"  class="form-control flex" id="inputEmail3">
+                <input type="text"  class="form-control flex">
               </div>
             </div>
             <div class="form-group">
-              <label for="inputEmail3" class="col-xs-12 col-sm-3 control-label">Cover</label>
+              <label class="col-xs-12 col-sm-3 control-label">Cover</label>
                 <div class="col-xs-12 col-sm-9 input-group">
-                  <input type="file" class="form-control flex" id="inputPassword3">
+                  <input type="file" class="form-control flex">
                 </div>
             </div>
             <div class="form-group">
-              <label for="inputEmail3" class="col-xs-12 col-sm-3 control-label">Harga Sticker</label>
+              <label class="col-xs-12 col-sm-3 control-label">Harga Sticker</label>
               <div class="col-xs-12 col-sm-9 input-group">
                 <div class="input-group-addon">Rp.</div>
-                <input type="password" class="form-control flex" id="inputPassword3">
+                <input type="number" class="form-control flex">
               </div>
             </div>
             <div class="form-group">
-              <label for="inputEmail3" class="col-xs-12 col-sm-3 control-label">Sticker Set</label>
+              <label class="col-xs-12 col-sm-3 control-label">Sticker Set</label>
               <div class="col-xs-12 col-sm-9 input-group">
-                <input type="password" class="form-control flex" id="inputPassword3">
+                <input type="text" class="form-control flex" >
               </div>
             </div>
           </form>                        
@@ -73,16 +73,147 @@
     </div>
   </div>
 </div>
-    <!-- /tambah stiker -->
+<!-- /tambah stiker -->
 
-    <!-- tambah paket -->
+<!-- edit stiker -->
+  <div class="modal fade modal-white" id="EditStiker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content infotrophy-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Edit Stiker : AAAA</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal ">
+            <div class="form-group ">
+              <label class="col-xs-12 col-sm-3 control-label ">Nama Stiker</label>
+              <div class="col-xs-12 col-sm-9 input-group">
+                <input type="text"  class="form-control flex" placeholder="namaStiker">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-xs-12 col-sm-3 control-label ">Cover</label>
+                <div class="col-xs-12 col-sm-9 input-group">
+                  <input type="file" class="form-control flex" >
+                </div>
+            </div>
+            <div class="form-group">
+              <label  class="col-xs-12 col-sm-3 control-label ">Harga Stiker</label>
+              <div class="col-xs-12 col-sm-9 input-group">
+                <div class="input-group-addon">Rp.</div>
+                <input type="number" class="form-control flex" placeholder="hargaLama">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-xs-12 col-sm-3 control-label ">Stiker Set</label>
+              <div class="col-xs-12 col-sm-9 input-group">
+                <input type="text" class="form-control flex" placeholder="stiker set lama">
+              </div>
+            </div>
+          </form>    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green" data-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- /edit stiker -->
+
+<!-- edit paket-->
+  <div class="modal fade modal-white" id="EditPaket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content infotrophy-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Edit Paket : AAAA</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal ">
+            <div class="form-group ">
+              <label  class="col-xs-12 col-sm-3 control-label ">Nama Paket</label>
+              <div class="col-xs-12 col-sm-9 input-group">
+                <input type="text"  class="form-control flex" placeholder="namaStiker">
+              </div>
+            </div>
+            <div class="form-group">
+              <label  class="col-xs-12 col-sm-3 control-label ">Harga paket</label>
+              <div class="col-xs-12 col-sm-9 input-group">
+                <div class="input-group-addon">Rp.</div>
+                <input type="number" class="form-control flex" placeholder="hargaLama">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-xs-12 col-sm-3 control-label ">Paket Stiker</label>
+              <div class="col-xs-12 col-sm-9 input-group">
+                <input type="text" class="form-control flex" placeholder="Paketpaket stiker lama">
+              </div>
+            </div>
+          </form>    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green" data-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- /edit paket -->
+
+
+<!-- hapus stiker -->
+  <div class="modal fade modal-white" id="HapusStiker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content infotrophy-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Menghapus Stiker....</h4>
+        </div>
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-xs-7"><h3>Nama stiker : Nama Stiker</h3><h3>Harga : Rp. 230.000</h3></div>
+            <div class="col-xs-5"><img src="images/thumbnails/praycircle/picture-1.png" class="img-responsive img-rounded"> </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green" data-dismiss="modal">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- /hapus stiker -->
+
+
+<!-- hapus paket -->
+  <div class="modal fade modal-white" id="HapusPaket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content infotrophy-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Menghapus Paket....</h4>
+        </div>
+        <div class="modal-body ">
+          <h3>Nama Paket : Nama Paket</h3><h3>Harga : Rp. 230.000</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green" data-dismiss="modal">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- /hapus stiker -->
+
+
+<!-- tambah paket -->
 <div class="collection-trophy">
   <div class="modal fade modal-white" id="TambahPaket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content infotrophy-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Tambah Paket</h4>
+          <h4 class="modal-title" >Tambah Paket</h4>
         </div>
         <div class="modal-body">
           <form class="form-horizontal ">
@@ -175,9 +306,9 @@
     </div>
   </div>
 </div>
-    <!-- /tambah paket -->
+<!-- /tambah paket -->
 
-    <!-- detil stiker -->
+<!-- detil stiker -->
   <div class="modal fade" id="DetailSticker" >
     <div class="modal-dialog" role="document">
       <div class="modal-content infotrophy-content">
@@ -226,9 +357,9 @@
       </div>
     </div>
   </div>
-  <!-- /detil stiker -->
+<!-- /detil stiker -->
 
-  <!-- detil paket -->
+<!-- detil paket -->
   <div class="modal fade" id="DetailPaket" >
     <div class="modal-dialog" role="document">
       <div class="modal-content infotrophy-content">
@@ -383,24 +514,26 @@
                         <td >this </td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
+
+
                     
                       <tr>
                         <td>2</td>
                         <td>Cakmen ribet</td>
                         <td>Rp. 15.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                     
@@ -409,11 +542,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                     
@@ -422,11 +555,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 15.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -434,11 +567,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -446,11 +579,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 15.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -458,11 +591,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -470,11 +603,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 15.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -482,11 +615,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -494,11 +627,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 15.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -506,11 +639,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -518,11 +651,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 15.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                       </tr>
                       <tr>
@@ -530,11 +663,11 @@
                         <td>Cakmen ribet</td>
                         <td>Rp. 12.000</td>
                         <td>
-                          <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                          <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
                         <td>
-                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                         </td>
                         </tr>
                         <tr>
@@ -542,11 +675,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -554,11 +687,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 12.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -566,11 +699,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -578,11 +711,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 12.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -590,11 +723,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -602,11 +735,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 12.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                          <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -614,12 +747,12 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 15.000</td>
                           <td>
-                              <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                                <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-                            <td>
-                                <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                            </td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditStiker"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusStiker"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailSticker"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
                         </tr>
                       </tbody>
                     </table>    
@@ -664,11 +797,11 @@
                           <td>Paket Hemat</td>
                           <td>Rp. 12.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -676,11 +809,11 @@
                           <td>Paket Ramadhan</td>
                           <td>Rp. 15.000</td>
                           <td>
-                              <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                              <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                              <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                              <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                              <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                              <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                           
@@ -689,11 +822,11 @@
                           <td>Cakmen ribet</td>
                           <td>Rp. 12.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                           </tr>
                         <tr>
@@ -701,11 +834,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -713,11 +846,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -725,11 +858,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -737,11 +870,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -749,23 +882,11 @@
                           <td>Paket 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Paket Komplit 1</td>
-                          <td>Rp. 15.000</td>
-                          <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                          </td>
-                          <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -773,23 +894,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Paket Komplit 1</td>
-                          <td>Rp. 15.000</td>
-                          <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                          </td>
-                          <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -797,23 +906,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Paket Komplit 1</td>
-                          <td>Rp. 15.000</td>
-                          <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                          </td>
-                          <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -821,23 +918,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Paket Komplit 1</td>
-                          <td>Rp. 15.000</td>
-                          <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                          </td>
-                          <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -845,23 +930,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Paket Komplit 1</td>
-                          <td>Rp. 15.000</td>
-                          <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                          </td>
-                          <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -869,23 +942,11 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Paket Komplit 1</td>
-                          <td>Rp. 15.000</td>
-                          <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
-                          </td>
-                          <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                         <tr>
@@ -893,11 +954,83 @@
                           <td>Paket Komplit 1</td>
                           <td>Rp. 15.000</td>
                           <td>
-                            <a href="#" class="ojo-mepet" ><span class="glyphicon glyphicon-edit"></span></a>
-                            <a href="#" class="ojo-mepet"><span class="glyphicon glyphicon-trash"></span></a>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
                           </td>
                           <td>
-                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-option-vertical"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Paket Komplit 1</td>
+                          <td>Rp. 15.000</td>
+                          <td>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Paket Komplit 1</td>
+                          <td>Rp. 15.000</td>
+                          <td>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Paket Komplit 1</td>
+                          <td>Rp. 15.000</td>
+                          <td>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Paket Komplit 1</td>
+                          <td>Rp. 15.000</td>
+                          <td>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Paket Komplit 1</td>
+                          <td>Rp. 15.000</td>
+                          <td>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Paket Komplit 1</td>
+                          <td>Rp. 15.000</td>
+                          <td>
+                            <a href="#" class="ojo-mepet"  data-toggle="modal" data-target="#EditPaket"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#HapusPaket"><span class="glyphicon glyphicon-trash"></span></a>
+                          </td>
+                          <td>
+                            <a href="#" class="ojo-mepet" data-toggle="modal" data-target="#DetailPaket"><span class="glyphicon glyphicon-eye-open"></span></a>
                           </td>
                         </tr>
                       </tbody>
