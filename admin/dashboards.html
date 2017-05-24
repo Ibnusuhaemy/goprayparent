@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <title>Welcome to Go Pray for Parent</title>
+        
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/icons/logo-go-pray.ico">
+        <link rel="icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        <link rel="apple-touch-icon" sizes="130x128" href="images/icons/logo-go-pray.ico">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/font-awesome.4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/owlcarousel.2.2.0/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style-rido.css">
+        
+    </head>
+    <body>
+        
+        <div class="admin-container animated right">
+            <header class="admin-header">
+                <nav class="navbar navbar-default navbar-admin conteiner">
+                    <div>  
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active" role="presentation"><a role="tab" data-toggle="tab">DashBoards</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="admin-leftmenu left">
+                <div class="user-profile">
+                    <div class="user-image">
+                        <img src="../images/photos/bitmap.png" width="149" height="149" alt="Go Pray Parent Profile" class="img-circle">
+                        <a href="#" class="edit-profile"></a>
+                    </div>
+                    <p class="name">ADMIN</p>
+                </div>
+                <div class="list-menu">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li ><a href="timeline.html"><span class="fa fa-refresh"></span> Sinkron Jadwal</a></li>
+                        <li ><a href="praycircle.html"><span class="fa fa-thumbs-up"></span> Nilai Ibadah</a></li>
+                        <li ><a href="sticker_store.html"><span class="fa fa-sticky-note"></span> Sticker store</a></li>
+                        <li class="active"><a href="dashboards.html"><span class="fa fa-credit-card"></span> Verifikasi Payment</a></li>
+                        <li><a href="collection.html"><span class="fa fa-user-circle"></span> Manage User</a></li>
+                    </ul>
+                </div>
+            </div>            
+            
+            <div class="tab-content">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="timeline">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-3 detail-rightmenu visible-xs">
+                            <p class="title">Jadwal</p>
+                            <div class="media media-family">
+                                <div class="media-body media-middle">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">Subuh</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">dhuhur</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">ashar</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">maghrib</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">isya</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="right-btn" >
+                                <a href="#" class="btn btn-green"><span class="fa fa-plus"></span> Add Family</a>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <div class="col-sm-8 col-md-9 detail-content" style="height: 100%;">
+                        <div class="panel panel-default panel-dashboards table-responsive">
+                            <div class="panel-heading infotrophy-content text-green">
+                                <h4>Verifikasi Payment</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table id="verifikasi_payment" class="display " cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                          <th>Bulan/Tanggal</th>
+                                          <th>Pukul</th>
+                                          <th>Nama</th>
+                                          <th>Nominal</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                          <th>Tanggal/Bulan</th>
+                                          <th>Pukul</th>
+                                          <th>Nama</th>
+                                          <th>Nominal</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>09/05</td>
+                                            <td>12.00</td>
+                                            <td>Nama 1</td>
+                                            <td>Rp. 12.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09/04</td>
+                                            <td>12.05</td>
+                                            <td>Nama 2</td>
+                                            <td>Rp. 12.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09/03</td>
+                                            <td>12.05</td>
+                                            <td>Nama 3</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/02</td>
+                                            <td>12.05</td>
+                                            <td>Nama 4</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 1</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 4</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 2</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 3</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 4</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 2</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 1</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 4</td>
+                                            <td>Rp. 13.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                           <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/05</td>
+                                            <td>12.05</td>
+                                            <td>Nama 5</td>
+                                            <td>Rp. 1.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-4 col-md-3 detail-rightmenu hidden-xs">
+                            <p class="title">Jadwal</p>
+                            <div class="media media-family">
+                                <div class="media-body media-middle">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">Subuh</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">dhuhur</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">ashar</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">maghrib</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">isya</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h4 class="media-heading">04.30</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="right-btn" >
+                                <a href="#" class="btn btn-green"><span class="fa fa-plus"></span> Add Family</a>
+                            </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+                </section>
+
+                <section class="admin-content tab-pane fade" role="tabpanel" id="summary">
+                    <div class="container">
+                        <div class="row">
+                            <p>a</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+        
+        <footer></footer>
+        
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/owlcarousel.2.2.0/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
+        <script type="text/javascript">
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                dots: false,
+                margin: 20,
+                autoHeight: true,
+                autoHeightClass: 'owl-height',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    400:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1200:{
+                        items:6
+                    }
+                }
+            });
+        </script>
+        
+        <!-- Dial Panel Toggle Button -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var action = 1;
+
+                $("[data-toggle=offcanvas]").on("click", viewSomething);
+
+                function viewSomething() {
+                    if ( action == 1 ) {
+                        $('.right').addClass('active');
+                        $('.left').addClass('active');
+
+                        $('.animated').addClass('slideInLeft');
+                        $('.animated').removeClass('slideInRight');
+
+                        action = 2;
+                    } else {
+                        $('.animated').removeClass('slideInLeft');
+                        $('.animated').addClass('slideInRight');
+
+                        $('.right').removeClass('active');
+                        $('.left').removeClass('active');
+
+                        action = 1;
+                    }
+                }
+            });$(document).ready(function() {
+                $('#verifikasi_payment').DataTable();
+                $('#konfirmasi_stiker').DataTable();
+            } );
+        </script>
+        
+    </body>
+</html>
