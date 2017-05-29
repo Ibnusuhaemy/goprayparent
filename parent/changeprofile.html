@@ -41,12 +41,12 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="active" role="presentation"><a href="#praycircle" aria-controls="timeline" role="tab" data-toggle="tab">Pray Circle</a></li>
+                        <li class="active" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="navbar-notif">
                             <a href="#" class="notif-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="fa fa-bell-o"><i class="fa fa-circle"></i></span>
+                                <span class="fa fa-bell-o"></span>
                             </a>
                             
                             <ul class="dropdown-menu dropdown-notif">
@@ -173,7 +173,7 @@
                 <div class="list-menu">
                     <ul class="nav nav-pills nav-stacked">
                         <li><a href="timeline.html"><span class="fa fa-circle"></span> Timeline</a></li>
-                        <li class="active"><a href="praycircle.html"><span class="fa fa-circle"></span> Pray Circle</a></li>
+                        <li><a href="praycircle.html"><span class="fa fa-circle"></span> Pray Circle</a></li>
                         <li><a href="sticker.html"><span class="fa fa-circle"></span> Sticker</a></li>
                         <li><a href="donate.html"><span class="fa fa-circle"></span> Donate</a></li>
                         <li><a href="collection.html"><span class="fa fa-circle"></span> Collection</a></li>
@@ -183,181 +183,59 @@
             </div>
             
             <div class="tab-content">
-                <section class="admin-content tab-pane fade in active" role="tabpanel" id="praycircle">
+                <section class="admin-content tab-pane fade in active" role="tabpanel" id="profile">
                     <div class="row">
-                        <div class="col-sm-4 col-md-3 detail-rightmenu visible-xs">
-                            <p class="title">Keluarga</p>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/bitmap.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Allie Carson</h4>
-                                    <p class="status">Bunda</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/user-4.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Kenneth Santiago</h4>
-                                    <p class="status">Bapak</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/user-5.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Chester Schultz</h4>
-                                    <p class="status">Om</p>
-                                </div>
-                            </div>
-                            
-                            <div class="right-btn">
-                                <a href="#" class="btn btn-green"><span class="fa fa-plus"></span> Add Family</a>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="col-sm-8 col-md-9 detail-content">
-                            <div class="panel panel-default panel-timeline panel-circle">
-                                <form class="circle-form">
-                                    <div class="media media-timeline">
-                                        <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" src="../images/photos/bitmap.png" width="50" height="50" alt="Go Pray User Photo Profile">
-                                            </a>
-                                        </div>
-                                        <div class="media-body circle-body">
-                                            <div class="form-group circle-for">
-                                                <span class="pointer">Untuk </span>
-                                                <input type="text" class="form-control" placeholder="">
+                        <div class="col-xs-12 detail-content">
+                            <div class="panel panel-default panel-timeline panel-donate">
+                                <form class="changeprofile">
+                                <div class="row">
+                                    <div class="col-sm-6 visible-xs">
+                                        <div class="profile-container">
+                                            <img class="img-responsive profile-pic" src="../images/photos/bitmap.png" height="225" width="225">
+                                            <div class="upload-button">
+                                                <div class="upload-text">
+                                                    <span class="fa fa-camera"></span>Ubah Foto Profil Anda
+                                                </div>
                                             </div>
-                                            <div class="form-group circle-message">
-                                                <textarea class="form-control" placeholder="Tulis pesan disini"></textarea>
-                                            </div>
+                                            <input class="file-upload" type="file" accept="image/*"/>
                                         </div>
                                     </div>
-                                    <div class="circle-button">
-                                        <button class="btn btn-white">
-                                            <span class="fa fa-camera"></span> Pray Daily
-                                        </button>
-                                        <input type="submit" class="btn btn-green pull-right" value="Post">
+                                    <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Nama Depan</label>
+                                                <input type="text" class="form-control" placeholder="Nama Depan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Nama Belakang</label>
+                                                <input type="text" class="form-control" placeholder="Nama Belakang">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="Example@email.com">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Hubungan Keluarga</label>
+                                                <input type="text" class="form-control" placeholder="ex: Mama, Papa, Adik, Kakak">
+                                            </div>
+                                            <div class="form-group btn-changeprofile">
+                                                <input type="reset" class="btn btn-white" value="Batal">
+                                                <input type="submit" class="btn btn-green" value="Simpan">
+                                            </div>
                                     </div>
+                                    <div class="col-sm-6 hidden-xs">
+                                        <div class="profile-container">
+                                            <img class="img-responsive profile-pic" src="../images/photos/bitmap.png" height="225" width="225">
+                                            <div class="upload-button">
+                                                <div class="upload-text">
+                                                    <span class="fa fa-camera"></span>Ubah Foto Profil Anda
+                                                </div>
+                                            </div>
+                                            <input class="file-upload" type="file" accept="image/*"/>
+                                        </div>
+                                    </div>
+                                </div>
                                 </form>
                             </div>
-                            
-                            <div class="panel panel-default panel-timeline circle-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/bitmap.png" width="50" height="50" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Allie Carson</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
-                                </div>
-                                <p class="timeline-detail">
-                                    The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly 
-                                    charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour 
-                                    amplifying condiments. Why are you still reading this- go get a cheeseburger.
-                                </p>
-                            </div>
-                            
-                            <div class="panel panel-default panel-timeline circle-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/user-5.png" width="50" height="50" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Kenneth Santiago</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
-                                </div>
-                                <p class="timeline-detail">
-                                    The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly 
-                                    charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour 
-                                    amplifying condiments. Why are you still reading this- go get a cheeseburger.
-                                </p>
-                            </div>
-                            
-                            <div class="panel panel-default panel-timeline circle-timeline">
-                                <div class="media media-timeline">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object" src="../images/photos/user-5.png" width="50" height="50" alt="Go Pray User Photo Profile">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Kenneth Santiago</h4>
-                                        <p class="media-time">09.10 a.m</p>
-                                    </div>
-                                </div>
-                                <p class="timeline-detail">
-                                    <img src="../images/thumbnails/praycircle/picture-1.png" width="659" height="581" alt="Go Pray Circle Picture" class="img-responsive">
-                                </p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="col-sm-4 col-md-3 detail-rightmenu hidden-xs">
-                            <p class="title">Keluarga</p>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/bitmap.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Allie Carson</h4>
-                                    <p class="status">Bunda</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/user-4.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Kenneth Santiago</h4>
-                                    <p class="status">Bapak</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media media-family">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" src="../images/photos/user-5.png" width="60" height="60" alt="Go Pray Parent Profile">
-                                    </a>
-                                </div>
-                                <div class="media-body media-middle">
-                                    <h4 class="media-heading">Chester Schultz</h4>
-                                    <p class="status">Om</p>
-                                </div>
-                            </div>
-                            
-                            <div class="right-btn">
-                                <a href="#" class="btn btn-green"><span class="fa fa-plus"></span> Add Family</a>
-                            </div>
-                            
                         </div>
                         
                     </div>
@@ -373,30 +251,30 @@
         <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="../js/bootstrap.js"></script>
         <script type="text/javascript" src="../assets/owlcarousel.2.2.0/owl.carousel.min.js"></script>
+        
+        <!-- Media Change Profile -->
         <script type="text/javascript">
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                dots: false,
-                margin: 20,
-                autoHeight: true,
-                autoHeightClass: 'owl-height',
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    400:{
-                        items:2
-                    },
-                    600:{
-                        items:3
-                    },
-                    1200:{
-                        items:6
+            $(document).ready(function() {
+                var readURL = function(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('.profile-pic').attr('src', e.target.result);
+                        }
+
+                        reader.readAsDataURL(input.files[0]);
                     }
                 }
+
+
+                $(".file-upload").on('change', function(){
+                    readURL(this);
+                });
+
+                $(".upload-button").on('click', function() {
+                   $(".file-upload").click();
+                });
             });
         </script>
         
