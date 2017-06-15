@@ -1093,6 +1093,9 @@ ul{
     background-size: 31px 31px;
     background-position: center center;
 }
+.panel-collection .collection-sticker{
+    text-align: left;
+}
 
 /* - Collection Modal - */
 .modal-open .modal.modal-white{
@@ -1689,6 +1692,10 @@ ul{
     }    
     .circle-button input[type=submit]{
         float: none !important;
+    }
+
+    .collection-caption{
+        margin-left: -50px;    
     }
 }
 
