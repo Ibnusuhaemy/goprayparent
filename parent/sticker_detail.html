@@ -185,67 +185,241 @@
             <div class="tab-content">
                 <section class="admin-content tab-pane fade in active" role="tabpanel" id="sticker">
                     <div class="row">
-                        <div class="col-xs-12 detail-content">
+                        <div class="col-xs-12 detail-content sticker-detail">
                             <div class="panel panel-default panel-timeline panel-sticker">
-                                <div class="form-group form-filter">
-                                    <select class="form-control">
-                                        <option value="0">All</option>
-                                    </select>
-                                    <span class="fa fa-angle-down"></span>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                       <img src="../images/photos/big-no-sticker.png" width="250" height="250" alt="Sticker Icon" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading sticker-title">Solat Wajib</h4>
+                                        <p class="sticker-desc">The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly charred.</p>
+                                        <p class="sticker-price">Rp 3.000</p>
+                                        <a href="#" class="btn btn-round-green" data-toggle="modal" data-target="#buyModal">Beli</a>
+                                    </div>
                                 </div>
+                                
+                                <!-- Pilih Pembayaran -->
+                                <div class="modal fade buysticker modal-white" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Pilih Pembayaran (1/2)</h4>
+                                            </div>
+                                            <form class="formpayment">
+                                                <div class="modal-body">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" value="mobile" class="mobile-payment" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Mobile Payment (Indosat)</span>
+                                                        </label>
+                                                        <img src="../images/icons/Indosat.png" width="72" height="21" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" value="mobile" class="mobile-payment" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Mobile Payment (Telkomsel)</span>
+                                                        </label>
+                                                        <img src="../images/icons/Telkomsel.png" width="72" height="22" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" value="mobile" class="mobile-payment" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Mobile Payment (XL)</span>
+                                                        </label>
+                                                        <img src="../images/icons/XL_Axiata.png" width="26" height="22" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Bank Transfer (BNI)</span>
+                                                        </label>
+                                                        <img src="../images/icons/BNI.png" width="68" height="22" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Bank Transfer (BCA)</span>
+                                                        </label>
+                                                        <img src="../images/icons/BCA.png" width="70" height="22" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="submit" class="btn btn-green" value="Pilih" name="submitpilih">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Payment -->
+                                <div class="modal fade buysticker modal-white" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Mobile Payment (2/2)</h4>
+                                            </div>
+                                            <form class="sticker-form mobile-form">
+                                                <div class="modal-body">
+                                                    <label class="control-label">Masukan nomor handphone anda</label>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                                                            <input type="tel" class="form-control" id="" placeholder="Nomor Handphone">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="submit" class="btn btn-green" value="Request Validation Key" name="submitmobile">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Credit Card -->
+                                <div class="modal fade buysticker modal-white" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Credit Card (2/2)</h4>
+                                            </div>
+                                            <form class="sticker-form cc-form">
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon"><span class="fa fa-credit-card"></span></div>
+                                                            <input type="number" class="form-control" id="" placeholder="Nomor Kartu Kredit">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-6 left">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon"><span class="fa fa-calendar-minus-o"></span></div>
+                                                                    <input type="text" class="form-control" id="" placeholder="mm/yy">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 right">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon"><span class="fa fa-lock"></span></div>
+                                                                    <input type="number" class="form-control" id="" placeholder="CVV (3 digit)">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <input type="submit" class="btn btn-green" value="Proses" name="submitmobile">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Bank Transfer -->
+                                <div class="modal fade buysticker modal-white" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Bank Transfer (2/2)</h4>
+                                            </div>
+                                            <div class="modal-body bank-sticker">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <p>Atas Nama</p>
+                                                    </div>
+                                                    <div class="col-md-8 detail-info">
+                                                        <p>GoPray Indonesia</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <p>Bank</p>
+                                                    </div>
+                                                    <div class="col-md-8 detail-info">
+                                                        <img src="../images/icons/BankMandiri.png" width="76" height="22" alt="Akun Bank Mandiri GoPray Indonesia" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <p>No. Rekening</p>
+                                                    </div>
+                                                    <div class="col-md-8 detail-info">
+                                                        <p>1234-1234-1234</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <p>Jumlah</p>
+                                                    </div>
+                                                    <div class="col-md-9 detail-info">
+                                                        <p class="bank-nominal">Rp 10.321</p>
+                                                        <p class="important-info">Penting! Mohon transfer sampai 3 digit terakhir</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-green" data-dismiss="modal">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                
                                 <ul class="sticker-list">
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <a href="sticker_detail.html" class="sticker-name">Solat wajib</a>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Solat Sunnah Rawatib</p>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Sedekah</p>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Puasa Wajib</p>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Juzamma</p>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Membantu Orang Tua</p>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Iqra</p>
                                     </li>
                                     <li class="sticker-item">
                                         <div class="img-sticker">
                                             <img src="../images/photos/no-sticker.png" width="150" height="150" alt="Sticker Icon" class="img-responsive">
                                         </div>
-                                        <p class="sticker-name">Baca Buku Nabi</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        
                     </div>
                 </section>
 
@@ -321,6 +495,23 @@
                     }
                 }
             });
+        </script>
+        
+        <!-- Pilih Pembayaran -->
+        <script type="text/javascript">
+//            $(".formpayment").submit(function(e){
+//                e.preventDefault();
+//
+//                // get selected value
+//                var selected = $("input[type='radio'][name='payment']:checked").val;
+//
+//                // check if an option was selected
+//                if (selected == "mobile") {
+//                    console.log("test");     
+//                } else {
+//                    alert("Please select an option");
+//                }
+//            });
         </script>
         
     </body>
