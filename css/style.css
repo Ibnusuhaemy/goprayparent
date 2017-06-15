@@ -5,7 +5,6 @@
   font-family: 'Avenir Medium';
   src: url('../fonts/avenirmedium.eot');
   src: url('../fonts/avenirmedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/avenirmedium.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/avenirmedium.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/avenirmedium.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/avenirmedium.svg#svgFontName') format('svg'); /* Legacy iOS */
@@ -93,6 +92,34 @@ ul{
     outline-offset: 0;
 }
 
+/* Rounded Button Green */
+.btn-round-green{
+    background: #20C27B;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #03ba6a;
+    width: 125px;
+}
+.btn-round-green:focus,
+.btn-round-green:hover{
+    color: #fff;
+    outline: none;
+}
+.btn-round-green:focus,
+.btn-round-green:active:focus,
+.btn-round-green.active:focus,
+.btn-round-green.focus,
+.btn-round-green:active.focus, .btn-green.active.focus {
+    outline: none;
+    outline-offset: 0;
+}
+
 /* White Button */
 .btn-white{
     background: #fff;
@@ -119,6 +146,101 @@ ul{
     outline: none;
     outline-offset: 0;
 }
+
+
+/* - Checkboxes & Radio Buttons - */
+.checkbox label,
+.radio label {
+    padding-left: 0;
+    font-family: 'Avenir Roman', Fallback, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #2a2a2a;
+}
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.checkbox .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    background: #fff;
+    width: 23px;
+    height: 23px;
+    float: left;
+    margin-right: .5em;
+    top: 2px;
+}
+.radio .cr{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #20c27b;
+    background: #fff;
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: .5em;
+    top: 2px;
+}
+.checkbox .cr{
+    border-radius: .25em;
+}
+.radio .cr {
+    border-radius: 50px;
+}
+.radio .cr {
+    border-radius: 50%;
+}
+.checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+}
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: 15px;
+    color: #20C27B;
+    line-height: 0;
+    top: 50%;
+}
+.checkbox .cr .cr-icon{
+    left: 20%;
+}
+.radio .cr .cr-icon {
+    left: 1px;
+}
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+.checkbox.box-title{
+    display: inline-block;
+    white-space: nowrap;
+}
+
 
 /* - User Dropdown - */
 .user-menu{
@@ -215,6 +337,19 @@ ul{
     font-family: "Avenir Roman", Fallback, sans-serif;
     opacity: 0.5;
     color: #363636;
+}
+
+/* - Input Group - */
+.input-group-addon{
+    background-color: #fff;
+    border-color: #e0e1ed;
+}
+.input-group .form-control{
+    border-left: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 /* --- Navigation Bar --- */
@@ -936,6 +1071,123 @@ ul{
 }
 
 
+/* --- Sticker Detail --- */
+.sticker-detail .media-body{
+    padding-left: 30px;
+}
+.sticker-detail .sticker-title{
+    color: #363636;
+    font-family: "Avenir Heavy", Fallback, sans-serif;
+    font-size: 32.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.sticker-detail .sticker-desc{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 18.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+}
+.sticker-detail .sticker-price{
+    color: #20c17b;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 28.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.sticker-detail .sticker-list{
+    margin-top: 30px;
+}
+.buysticker .modal-title{
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 20.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #20c17b;
+}
+.buysticker .radio{
+    position: relative;
+}
+.buysticker .payment-logo{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+}
+.buysticker .modal-body{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.sticker-form .input-group-addon{
+    color: #20C27B;
+    font-size: 22px;
+}
+.sticker-form .control-label{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 16.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.mobile-form .input-group .form-control{
+    width: 260px;
+}
+.cc-form .form-group{
+    margin-bottom: 20px;
+}
+.cc-form .form-group .row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.cc-form .form-group .left{
+    padding-right: 10px;
+}
+.cc-form .form-group .right{
+    padding-left: 10px;
+}
+.bank-sticker.modal-body{
+    padding-top: 0;
+    padding-bottom: 70px;
+}
+.bank-sticker .row{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e1ed;
+}
+.bank-sticker p{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 16.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.bank-sticker .detail-info{
+    text-align: right;
+}
+.bank-sticker .img-responsive{
+    display: inline-block;
+}
+.bank-sticker .bank-nominal{
+    margin-bottom: 0;
+}
+.bank-sticker .important-info{
+    color: #F3004E;
+}
+
+
 /* --- Donate --- */
 .panel-donate{
     min-height: 640px;
@@ -1605,6 +1857,23 @@ ul{
     }
     .btn-changeprofile{
         text-align: center;
+    }
+    
+    /* --- Sticker Detail --- */
+    .sticker-detail .media{
+        margin-bottom: 65px;
+    }
+    .sticker-detail .media-left{
+        display: block;
+        margin-bottom: 15px;
+    }
+    .sticker-detail .media-body{
+        padding-left: 0;
+    }
+    .sticker-detail .panel-sticker .sticker-item{
+        width: 120px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
 }
