@@ -237,7 +237,7 @@
                                                     <hr>
                                                     <div class="radio">
                                                         <label>
-                                                            <input type="radio" id="radio" name="payment">
+                                                            <input type="radio" id="radio" name="payment" value="banktransfer">
                                                             <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                                                             <span class="cr-text">Bank Transfer (BNI)</span>
                                                         </label>
@@ -512,6 +512,19 @@
 //                    alert("Please select an option");
 //                }
 //            });
+            $(".formpayment").submit(function(e){
+                e.preventDefault();
+
+                // get selected value
+                var selected = $("input[type='radio'][name='payment']:checked").val;
+
+                // check if an option was selected
+                if (selected == "mobile") {
+                    alert("ok");
+                } else {
+                    alert("Please select an option");
+                }
+            });
         </script>
         
     </body>

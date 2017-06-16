@@ -1432,6 +1432,8 @@ ul{
 .panel-circle .circle-form .media{
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
+    overflow: visible;
 }
 .circle-form .media .media-left{
     padding-top: 10px;
@@ -1466,6 +1468,138 @@ ul{
 }
 .circle-timeline .media-timeline .media-heading{
     min-height: inherit;
+}
+
+/* - Pray Circle - */
+.circle-form .daily-message{
+    padding-left: 0;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    z-index: 999;
+    position: absolute;
+    width: 744px;
+    height: 250px;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+}
+.daily-message .circle-tab-container{
+    border: 1px solid #E0E1ED;
+    border-radius: 3px;
+}
+.circle-tab-container .circle-tab{
+    padding-left: 15px;
+    background: #fff;
+}
+.circle-tab > li{
+    margin-bottom: -2px;
+    padding: 15px 15px 0 15px
+}
+.circle-tab > li > a{
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 20.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    color: #464646;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-right: 0;
+    line-height: normal;
+    padding: 10px 0;
+}
+.circle-tab > li > a:hover,
+.circle-tab > li > a:focus{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+.circle-tab > li.active > a,
+.circle-tab > li.active > a:hover,
+.circle-tab > li.active > a:focus{
+    color: #23b968;
+    border: none;
+    border-bottom: 2px solid #20C27B;
+    padding-left: 0;
+    padding-right: 0;
+}
+.circle-tab-container .tab-content .form-group{
+    margin-bottom: 0;
+    background: #fff;
+}
+.circle-message .free-text{
+    margin-left: 30px;
+}
+.daily-message .circle-message{
+    padding-top: 20px;
+}
+.circle-message .text-form{
+    padding: 10px 15px;
+    border-top: 1px solid #e0e1ed;
+    text-align: right;
+}
+.free-text-white{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+}
+
+/* Upload Image */
+.circle-upload{
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #fff;
+}
+.daily-message .circle-separator{
+    border-top: 1px solid #e0e1ed;
+    margin: 0;
+}
+.circle-upload .form-group{
+    padding: 10px;
+}
+.circle-upload .label-grey{
+    color: #363636;
+    font-family: "Avenir Roman", Fallback, sans-serif;
+    font-size: 16.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.circle-upload .label-green{
+    color: #20C17B;
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 18.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+}
+.circle-upload .form-control{
+    padding-left: 0;
+}
+.circle-tab-container .form-group.upload-btn{
+    background: #fff;
+    padding: 15px;
+    position: relative;
+}
+.circle-tab-container .form-group .file-input{
+    display: inline-block;
+}
+.circle-tab-container .form-group .btn-done{
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+    left: auto;
 }
 
 
