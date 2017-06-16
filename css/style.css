@@ -54,6 +54,7 @@ ul{
 .btn{
     padding-left: 20px;
     padding-right: 20px;
+    white-space: normal;
 }
 .btn:focus,
 .btn:active:focus,
@@ -1088,14 +1089,17 @@ ul{
     font-family: "Avenir Medium", Fallback, sans-serif;
     font-size: 32.0px;
     padding-top: 38px;
+    color: #363636;
 }
 .font-detail2{
     font-family: "Avenir Medium", Fallback, sans-serif;
     font-size: 18.0px;
+    color: #363636;
 }
 .font-detail3{
     font-family: "Avenir Medium", Fallback, sans-serif;
     font-size: 32.0px;
+    color: #363636;
 }
 
 /* --- Sticker Detail --- */
@@ -1149,6 +1153,10 @@ ul{
     right: 0;
     bottom: 0;
     left: auto;
+}
+.buysticker .visa-logo img{
+    margin-right: 5px;
+    display: inline-block;
 }
 .buysticker .modal-body{
     padding-left: 30px;
@@ -1971,15 +1979,6 @@ ul{
         padding-top: 21px;
         padding-bottom: 21px;
     }
-/*
-    .navbar-notif.open .notif-icon{
-        width: 55px;
-        height: 61px;
-        position: absolute;
-        right: 0;
-        top: -66px;
-    }
-*/
     .dropdown-notif .media-left{
         display: block;
         margin-bottom: 10px;
@@ -2015,6 +2014,12 @@ ul{
     }
     .sticker-capt{
         text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .font-detail3{
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     /* --- Change Profile --- */
@@ -2035,6 +2040,12 @@ ul{
         display: block;
         margin-bottom: 15px;
     }
+    .sticker-detail .media-left .media-object{
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .sticker-detail .media-body{
         padding-left: 0;
     }
@@ -2042,6 +2053,16 @@ ul{
         width: 120px;
         padding-left: 10px;
         padding-right: 10px;
+    }    
+    .bank-sticker .detail-info{
+        text-align: left;
+    }
+    .cc-form .form-group .right{
+        padding-left: 15px;    
+    }
+    .cc-form .form-group .left{
+        padding-right: 15px;
+        margin-bottom: 15px;
     }
     
 }
@@ -2130,6 +2151,7 @@ ul{
     .panel-sticker .sticker-list{
         text-align: center;
     }
+    
     /* --- Pray Circle --- */
     .circle-form .circle-body{
         padding-left: 0;
@@ -2140,6 +2162,20 @@ ul{
     }    
     .circle-button input[type=submit]{
         float: none !important;
+    }
+    .buysticker .payment-logo{
+        position: relative;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .mobile-form .input-group .form-control{
+        width: 100%;
+    }
+    
+    /* --- Collection --- */
+    .sticker-capt-container{
+        padding-left: 0;
+        padding-right: 0;
     }
     
 }

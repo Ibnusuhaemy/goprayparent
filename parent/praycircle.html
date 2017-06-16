@@ -264,7 +264,7 @@
                                                                 <textarea class="form-control" placeholder="Tulis pesan disini" id="freetext"></textarea>
                                                             </div>
                                                             <div class="text-form">
-                                                                <input type="submit" name="submittext" class="btn btn-green" value="Done">
+                                                                <button type="button" name="submittext" class="btn btn-green" id="freebtn">Done</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -280,7 +280,7 @@
                                                             </div>
                                                             <hr class="circle-separator">
                                                             <div class="form-group">
-                                                                <input type="text" name="toptext" class="form-control" placeholder="Tulis pesan disini">
+                                                                <input type="text" name="toptext" class="form-control" id="uploadtext" placeholder="Tulis pesan disini">
                                                             </div>
                                                             <hr class="circle-separator">
                                                             <div class="form-group">
@@ -504,10 +504,33 @@
             });
         </script>
         <script type="text/javascript">
+            $("#timelinetext").on("focus", function(){
+                $(".free-text-white").show();
+                $(".daily-message").show();
+                $("#freetext").focus();
+            });
+        </script>
+        <script type="text/javascript">
             $(".free-text-white").on("click", function(){
                 $(".free-text-white").hide();
                 $(".daily-message").hide();
             });
         </script>
+        
+        <!-- Event for want to post action -->
+        <script type="text/javascript">
+            $("#freebtn").on("click", function(){
+                
+                var freeText = $("#freetext").text();
+                
+                if(freeText == ""){
+                    console.log("null");
+                }else{
+                    console.log(freeText);
+                }
+                
+            });
+        </script>
+        
     </body>
 </html>

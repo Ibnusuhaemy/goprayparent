@@ -237,11 +237,8 @@
                                                     <hr>
                                                     <div class="radio">
                                                         <label>
-<<<<<<< HEAD
-                                                            <input type="radio" id="radio" name="payment" value="banktransfer">
-=======
-                                                            <input type="radio" id="radio" value="banktrans" name="payment">
->>>>>>> origin/master
+
+                                                            <input type="radio" id="radio" value="banktrans" name="payment">    
                                                             <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                                                             <span class="cr-text">Bank Transfer (BNI)</span>
                                                         </label>
@@ -255,6 +252,27 @@
                                                             <span class="cr-text">Bank Transfer (BCA)</span>
                                                         </label>
                                                         <img src="../images/icons/BCA.png" width="70" height="22" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" value="banktrans" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Bank Transfer (Mandiri)</span>
+                                                        </label>
+                                                        <img src="../images/icons/BankMandiri.png" width="76" height="22" alt="Go Pray Payment Account" class="img-responsive payment-logo">
+                                                    </div>
+                                                    <hr>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" id="radio" value="creditcard" name="payment">
+                                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                            <span class="cr-text">Credit Card</span>
+                                                        </label>
+                                                        <div class="payment-logo visa-logo">
+                                                            <img src="../images/icons/Group.png" width="65" height="20" alt="Go Pray Payment Account" class="img-responsive">
+                                                            <img src="../images/icons/Master_Card.png" width="29" height="22" alt="Go Pray Payment Account" class="img-responsive">
+                                                        </div>
                                                     </div>
                                                     <hr>
                                                 </div>
@@ -292,7 +310,7 @@
                                 </div>
                                 
                                 <!-- Credit Card -->
-                                <div class="modal fade buysticker modal-white" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal fade buysticker modal-white" id="creditcardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -308,13 +326,13 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="row">
-                                                            <div class="col-md-6 left">
+                                                            <div class="col-sm-6 col-md-6 left">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><span class="fa fa-calendar-minus-o"></span></div>
                                                                     <input type="text" class="form-control" id="" placeholder="mm/yy">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6 right">
+                                                            <div class="col-sm-6 col-md-6 right">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><span class="fa fa-lock"></span></div>
                                                                     <input type="number" class="form-control" id="" placeholder="CVV (3 digit)">
@@ -332,7 +350,7 @@
                                 </div>
                                 
                                 <!-- Bank Transfer -->
-                                <div class="modal fade buysticker modal-white" id="mobileModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal fade buysticker modal-white" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -340,34 +358,34 @@
                                             </div>
                                             <div class="modal-body bank-sticker">
                                                 <div class="row">
-                                                    <div class="col-md-4">
+                                                    <div class="col-xs-12 col-sm-3 col-md-4">
                                                         <p>Atas Nama</p>
                                                     </div>
-                                                    <div class="col-md-8 detail-info">
+                                                    <div class="col-xs-12 col-sm-9 col-md-8 detail-info">
                                                         <p>GoPray Indonesia</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-4">
+                                                    <div class="col-xs-12 col-sm-3 col-md-4">
                                                         <p>Bank</p>
                                                     </div>
-                                                    <div class="col-md-8 detail-info">
+                                                    <div class="col-xs-12 col-sm-9 col-md-8 detail-info">
                                                         <img src="../images/icons/BankMandiri.png" width="76" height="22" alt="Akun Bank Mandiri GoPray Indonesia" class="img-responsive">
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-4">
+                                                    <div class="col-xs-12 col-sm-3 col-md-4">
                                                         <p>No. Rekening</p>
                                                     </div>
-                                                    <div class="col-md-8 detail-info">
+                                                    <div class="col-xs-12 col-sm-9 col-md-8 detail-info">
                                                         <p>1234-1234-1234</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-xs-12 col-sm-2 col-md-3">
                                                         <p>Jumlah</p>
                                                     </div>
-                                                    <div class="col-md-9 detail-info">
+                                                    <div class="col-xs-12 col-sm-10 col-md-9 detail-info">
                                                         <p class="bank-nominal">Rp 10.321</p>
                                                         <p class="important-info">Penting! Mohon transfer sampai 3 digit terakhir</p>
                                                     </div>
@@ -503,34 +521,6 @@
         
         <!-- Pilih Pembayaran -->
         <script type="text/javascript">
-<<<<<<< HEAD
-//            $(".formpayment").submit(function(e){
-//                e.preventDefault();
-//
-//                // get selected value
-//                var selected = $("input[type='radio'][name='payment']:checked").val;
-//
-//                // check if an option was selected
-//                if (selected == "mobile") {
-//                    console.log("test");     
-//                } else {
-//                    alert("Please select an option");
-//                }
-//            });
-            $(".formpayment").submit(function(e){
-                e.preventDefault();
-
-                // get selected value
-                var selected = $("input[type='radio'][name='payment']:checked").val;
-
-                // check if an option was selected
-                if (selected == "mobile") {
-                    alert("ok");
-                } else {
-                    alert("Please select an option");
-                }
-            });
-=======
            $(".formpayment").submit(function(e){
                e.preventDefault();
 
@@ -543,6 +533,10 @@
                         $('#buyModal').modal('hide');
 
                    }
+                   else if (selected=="creditcard"){
+                        $('#creditcardModal').modal('show');
+                        $('#buyModal').modal('hide');
+                   }
                    else if (selected=="banktrans"){
                         $('#bankModal').modal('show');
                         $('#buyModal').modal('hide');
@@ -551,7 +545,6 @@
                         alert("Please select an option!");
                    }    
            });
->>>>>>> origin/master
         </script>
         
     </body>
