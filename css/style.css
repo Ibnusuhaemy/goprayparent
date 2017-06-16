@@ -1988,11 +1988,11 @@ ul{
        margin-left: 17%;
     }
     .font-detail1{
-        margin-left: -42px;
+       text-align: center;
+
         
     }
     .font-detail2{
-        margin-left: -98px;
         text-align: center;
     }
     /* --- Pray Circle --- */
@@ -2058,22 +2058,10 @@ ul{
     .panel-timeline-detail .sticker-list-detail{
        margin-left: 10%;
     }
-    .font-detail1{
-        margin-left: -50px;
-    }
-    .font-detail2{
-        margin-left: -85px;
-    }
 }
 @media screen and (max-width: 320px){
     .panel-timeline-detail .sticker-list-detail{
        margin-left: 0;
-    }
-    .font-detail1{
-        margin-left: -60px;
-    }
-    .font-detail2{
-        margin-left: -75px;
     }
 }
 
