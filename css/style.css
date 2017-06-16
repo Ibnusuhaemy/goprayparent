@@ -2009,11 +2009,11 @@ ul{
         width: 100%;
         margin-top: 20px;
     }
-    .collection-sticker .sticker-pict{
+    .sticker-pict{
         margin-left: auto;
         margin-right: auto;
     }
-    .collection-sticker .sticker-capt{
+    .sticker-capt{
         text-align: center;
     }
 
@@ -2044,6 +2044,18 @@ ul{
         padding-right: 10px;
     }
     
+}
+@media screen and (max-width: 493px){
+    .panel-sticker-detail .sticker-item-detail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .panel-timeline-detail .sticker-list-detail{
+       margin-left: auto;
+       margin-right: auto;
+    }
+
 }
 
 @media screen and (max-width: 479px){
@@ -2118,17 +2130,6 @@ ul{
     .panel-sticker .sticker-list{
         text-align: center;
     }
-    .panel-timeline-detail .sticker-list-detail{
-       margin-left: 17%;
-    }
-    .font-detail1{
-       text-align: center;
-
-        
-    }
-    .font-detail2{
-        text-align: center;
-    }
     /* --- Pray Circle --- */
     .circle-form .circle-body{
         padding-left: 0;
@@ -2140,6 +2141,7 @@ ul{
     .circle-button input[type=submit]{
         float: none !important;
     }
+    
 }
 
 @media screen and (max-width: 419px){
@@ -2183,19 +2185,6 @@ ul{
     }
     .infotrophy-content .infotrophy-list .pull-right{
         float: none !important;
-    }
-    .panel-timeline-detail .sticker-list-detail{
-       margin-left: 14%;
-    }
-}
-@media screen and (max-width: 375px){
-    .panel-timeline-detail .sticker-list-detail{
-       margin-left: 10%;
-    }
-}
-@media screen and (max-width: 320px){
-    .panel-timeline-detail .sticker-list-detail{
-       margin-left: 0;
     }
 }
 

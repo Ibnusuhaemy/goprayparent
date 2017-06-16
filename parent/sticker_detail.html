@@ -210,7 +210,7 @@
                                                 <div class="modal-body">
                                                     <div class="radio">
                                                         <label>
-                                                            <input type="radio" id="radio" value="mobile" class="mobile-payment" name="payment">
+                                                            <input type="radio" id="radio 1" value="mobile" class="mobile-payment" name="payment">
                                                             <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                                                             <span class="cr-text">Mobile Payment (Indosat)</span>
                                                         </label>
@@ -237,7 +237,11 @@
                                                     <hr>
                                                     <div class="radio">
                                                         <label>
+<<<<<<< HEAD
                                                             <input type="radio" id="radio" name="payment" value="banktransfer">
+=======
+                                                            <input type="radio" id="radio" value="banktrans" name="payment">
+>>>>>>> origin/master
                                                             <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                                                             <span class="cr-text">Bank Transfer (BNI)</span>
                                                         </label>
@@ -246,7 +250,7 @@
                                                     <hr>
                                                     <div class="radio">
                                                         <label>
-                                                            <input type="radio" id="radio" name="payment">
+                                                            <input type="radio" id="radio" value="banktrans" name="payment">
                                                             <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
                                                             <span class="cr-text">Bank Transfer (BCA)</span>
                                                         </label>
@@ -288,7 +292,7 @@
                                 </div>
                                 
                                 <!-- Credit Card -->
-                                <div class="modal fade buysticker modal-white" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal fade buysticker modal-white" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -328,7 +332,7 @@
                                 </div>
                                 
                                 <!-- Bank Transfer -->
-                                <div class="modal fade buysticker modal-white" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal fade buysticker modal-white" id="mobileModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -499,6 +503,7 @@
         
         <!-- Pilih Pembayaran -->
         <script type="text/javascript">
+<<<<<<< HEAD
 //            $(".formpayment").submit(function(e){
 //                e.preventDefault();
 //
@@ -525,6 +530,28 @@
                     alert("Please select an option");
                 }
             });
+=======
+           $(".formpayment").submit(function(e){
+               e.preventDefault();
+
+               // get selected value
+               var selected = $(".radio label input[type='radio']:checked").val();
+                    console.log (selected);
+               // check if an option was selected
+                   if (selected=="mobile"){
+                        $('#mobileModal').modal('show');
+                        $('#buyModal').modal('hide');
+
+                   }
+                   else if (selected=="banktrans"){
+                        $('#bankModal').modal('show');
+                        $('#buyModal').modal('hide');
+                   }
+                   else{
+                        alert("Please select an option!");
+                   }    
+           });
+>>>>>>> origin/master
         </script>
         
     </body>
