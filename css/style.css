@@ -1093,7 +1093,10 @@ ul{
     font-family: "Avenir Medium", Fallback, sans-serif;
     font-size: 18.0px;
 }
-
+.font-detail3{
+    font-family: "Avenir Medium", Fallback, sans-serif;
+    font-size: 32.0px;
+}
 
 /* --- Sticker Detail --- */
 .sticker-detail .media-body{
